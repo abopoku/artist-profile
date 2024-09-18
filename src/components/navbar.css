@@ -1,0 +1,105 @@
+/* General styles for desktop */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: auto;
+  height: 40px;
+  margin-right: 0.5rem;
+}
+
+.navbar-logo-text {
+  color: white;
+  margin: 0;
+  font-size: 1rem;/* Adjust font size for desktop */
+  text-decoration: none;  /* Remove underline */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.navbar-logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Remove underline */
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.navbar-links a {
+  color: white;
+  margin-right: 1.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+/* Media query for tablets (iPad and similar) */
+@media (max-width: 1024px) {
+  .logo-image {
+    height: 40px; /* Slightly smaller logo image */
+  }
+  
+  .navbar-logo-text{
+    font-size: 1.2rem; /* Slightly smaller logo text */
+  }
+
+  .navbar-links a {
+    font-size: 0.9rem; /* Slightly smaller link text */
+    margin-right: 0.8rem;
+  }
+}
+
+/* Media query for mobile devices (smartphones, etc.) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack logo and links vertically */
+    align-items: flex-start; /* Align items to the left */
+    padding: 0.5rem; /* Reduce padding */
+  }
+
+  .logo-image {
+    height: 35px; /* Adjust logo size for mobile */
+  }
+
+  .navbar-logo-text {
+    font-size: 1.1rem; /* Adjust logo size for mobile */
+  }
+
+  .navbar-links {
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    width: 100%;
+  }
+
+  .navbar-links a {
+    font-size: 0.85rem;
+    padding: 0.5rem 0;
+    margin-right: 0; /* Remove right margin for mobile */
+    text-align: left;
+    padding-left: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Add separation between links */
+  }
+
+  .navbar-links a:last-child {
+    border-bottom: none; /* Remove border for the last item */
+  }
+}
