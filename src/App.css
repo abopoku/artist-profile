@@ -1,38 +1,160 @@
-.App {
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header Section */
+.header-section {
+  background-image: url('/public/landingpageart.png'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .header-content {
+  color: #fff;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header-content p {
+  font-size: 1.2rem;
+  max-width: 800px;
+} */
+
+/* Welcome Section */
+.welcome-section {
+  background-color: #000;
   color: white;
+  text-align: center;
+  padding: 50px 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.welcome-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.welcome-section p {
+  font-size: 1.2rem;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+  padding: 30px 20px;
+  background-color: #f5f5f5;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
+}
+
+.portfolio-grid a {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-grid img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+}
+
+.portfolio-grid img:hover {
+  transform: scale(1.05);
+}
+
+
+/* Collage Style for Images */
+.portfolio-grid a:nth-child(1) {
+  grid-column: span 4; /* First image spans 3 columns */
+  grid-row: span 1;    /* Spans 1 row normal size  */
+}
+
+.portfolio-grid a:nth-child(2) {
+  grid-column: span 3; /* Second image spans 2 columns */
+  grid-row: span 1;    /* Spans 1 row normal size */
+}
+
+.portfolio-grid a:nth-child(3) {
+  grid-column: span 3; /* Third image spans 3 columns */
+  grid-row: span 1;    /* Same size as first image */
+}
+
+.portfolio-grid a:nth-child(4) {
+  grid-column: span 4; /* Fourth image spans 3 columns */
+  grid-row: span 1;    /* Wider but not tall */
+}
+
+.portfolio-grid a:nth-child(5) {
+  grid-column: span 4; /* Fourth image spans 3 columns */
+  grid-row: span 1;    /* Wider but not tall */
+}
+
+/* Overlay Title Effect */
+.portfolio-grid a .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Black transparent overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-grid a:hover .overlay {
+  opacity: 1;
+}
+
+.portfolio-grid .overlay h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
-  to {
-    transform: rotate(360deg);
+
+  .portfolio-grid a {
+    grid-column: span 2; /* Let images span 2 columns in smaller screens */
+    grid-row: auto;
+  }
+
+  .header-content h1 {
+    font-size: 2rem;
+  }
+
+  .header-content p {
+    font-size: 1rem;
+  }
+
+  .welcome-section h2 {
+    font-size: 2rem;
   }
 }
