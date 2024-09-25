@@ -1,0 +1,33 @@
+.portfolio {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .paintings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .painting {
+    flex: 1 1 calc(45% - 20px); /* Adjusts the size based on the screen */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .painting img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .painting h3 {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
