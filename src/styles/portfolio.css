@@ -1,0 +1,96 @@
+/* Styling for the entire portfolio page */
+.portfolio {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navigation buttons for Previous and Next portfolio */
+  .portfolio-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .portfolio-nav-button {
+    background-color: darkgray;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .portfolio-nav-button:hover {
+    background-color: #f0f0f0;
+  }
+
+ /* Styling for the paintings inside the carousel */
+.painting {
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.carousel-image {
+  width: 230px; /* Ensure the image fits the container */
+  height: 250px; /* Ensure the image fits the container */
+  border-radius: 3px; /* Optional: Add some rounded corners */
+  transition: transform 0.3s ease;
+}
+
+.carousel-image:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.painting-title {
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.painting-title span {
+  font-size: 14px;
+  font-weight: normal;
+  color: #666;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 35px;
+  color: black; /* Or any color that ensures visibility */
+}
+
+.slick-prev {
+  left: 10px; /* Adjust if needed */
+  z-index: 1;
+}
+
+.slick-next {
+  right: 10px; /* Adjust if needed */
+  z-index: 1;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .painting-title {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .painting-title {
+    font-size: 12px;
+  }
+}

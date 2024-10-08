@@ -24,6 +24,4 @@ yarn-error.log*
 
 #images
 /public
-/public/portfolio1images
-/public/portfolio1images/face off.png
-/public/portfolio1images/inner vision.png
+
