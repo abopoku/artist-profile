@@ -36,10 +36,10 @@ const HomePage = () => {
           <div className="overlay"><h3>Nubuke Exhibition</h3></div>
           </Link>
           <Link to="/portfolio3"><img src="/digitalexpres.png" alt="Portfolio 3" />
-          <div className="overlay"><h3>Digital Expressions</h3></div>
+          <div className="overlay"><h3>Not Exhibited Yet</h3></div>
           </Link>
           <Link to="/portfolio4"><img src="/currently working on.png" alt="Portfolio 4" />
-          <div className="overlay"><h3>Current Work</h3></div>
+          <div className="overlay"><h3>Unseen Work</h3></div>
           </Link>
         </div>
       </section>

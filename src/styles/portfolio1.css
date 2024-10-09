@@ -36,7 +36,8 @@
 
 .carousel-image {
   width: 100%; /* Ensure the image fits the container */
-  height: auto; /* Ensure the image fits the container */
+  height: 250px; /* Ensure the image fits the container */
+  object-fit: cover; /* Prevent image distortion */
   border-radius: 3px; /* Optional: Add some rounded corners */
   transition: transform 0.3s ease;
 }
@@ -108,10 +109,16 @@
   .painting-title {
     font-size: 14px;
   }
+  .carousel-image {
+    height: 200px; /* Slightly smaller for tablets */
+  }
 }
 
 @media (max-width: 768px) {
   .painting-title {
     font-size: 12px;
+  }
+  .carousel-image {
+    height: 150px; /* Smaller for mobile devices */
   }
 }
