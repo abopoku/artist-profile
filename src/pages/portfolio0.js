@@ -3,69 +3,110 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { useNavigate } from 'react-router-dom';
-import '../styles/portfolio1.css'; // Imported the CSS file for styling
+import '../styles/portfolio0.css'; // Imported the CSS file for styling
 
-const Portfolio1 = () => {
+const Portfolio0 = () => {
   const navigate = useNavigate();
   const [selectedImage, setSelectedImage] = useState(null);
 
   const paintings = [
     {
-      title: 'Across the Divide',
-      imageUrl: '/portfolio1images/across the devide.png', // Replace with actual image URLs
+      title: 'Across the Desert 22x28',
+      imageUrl: '/portfolio0images/Across the Desert 22x28.jpeg', // Replace with actual image URLs
     },
     {
-      title: 'Face Off',
-      imageUrl: '/portfolio1images/face off.png',
+      title: 'Across the Sea 22x28',
+      imageUrl: '/portfolio0images/Across the Sea 22x28.jpeg',
     },
     {
-      title: 'Fress Talk',
-      imageUrl: '/portfolio1images/fress talk.png',
+      title: 'Ancestors Adorn 18x24',
+      imageUrl: '/portfolio0images/Ancestors Adorn 18x24.jpeg',
     },
     {
-      title: 'Inner Vision',
-      imageUrl: '/portfolio1images/inner vision.png',
+      title: 'Deeper Vision 22x28',
+      imageUrl: '/portfolio0images/Deeper vision 22x28.jpeg',
     },
     {
-      title: 'Inside the Mask',
-      imageUrl: '/portfolio1images/inside the mask.png',
+      title: 'Dogon Like 16x20',
+      imageUrl: '/portfolio0images/Dogon like 16x20.jpeg',
     },
     {
-      title: 'Into Masks',
-      imageUrl: '/portfolio1images/into masks.png',
+      title: 'HER 12x36',
+      imageUrl: '/portfolio0images/HER 12x36.jpeg',
     },
     {
-      title: 'Language 2',
-      imageUrl: '/portfolio1images/language 2.png',
+      title: 'HIM 12x36',
+      imageUrl: '/portfolio0images/HIM 12x36.jpeg',
     },
     {
-      title: 'Language 3',
-      imageUrl: '/portfolio1images/language 3.png',
+      title: 'Language 16X20',
+      imageUrl: '/portfolio0images/Language 16x20.jpeg',
     },
     {
-      title: 'Life on Earth',
-      imageUrl: '/portfolio1images/Life on earth.png',
+      title: 'Light Life 16x20',
+      imageUrl: '/portfolio0images/Light Life 16x20.jpeg',
     },
     {
-      title: 'My People',
-      imageUrl: '/portfolio1images/my people.png',
+      title: 'Light(Open Eyes) 16x20',
+      imageUrl: '/portfolio0images/Light(open eyes) 16x20.jpeg',
     },
     {
-      title: 'Phase Out',
-      imageUrl: '/portfolio1images/phase out.png',
+      title: 'Like Me 22x28',
+      imageUrl: '/portfolio0images/Like Me 22x28.jpeg',
     },
     {
-      title: 'Simple and True',
-      imageUrl: '/portfolio1images/simple and true.png',
+      title: 'New Vision 18x24',
+      imageUrl: '/portfolio0images/New Vision 18x24.jpeg',
     },
     {
-      title: 'Two heads are still Better',
-      imageUrl: '/portfolio1images/two heads still better.png',
+      title: 'New Vision 2 18x24',
+      imageUrl: '/portfolio0images/New Vision2 18x24.jpeg',
     },
     {
-      title: 'Working Mind',
-      imageUrl: '/portfolio1images/working mind.png',
+      title: 'No Hide 22x28',
+      imageUrl: '/portfolio0images/No Hide 22x28.jpeg',
     },
+    {
+      title: 'See Through Mask 1 16x20',
+      imageUrl: '/portfolio0images/See through(Mask)1 16x20.jpeg',
+    },
+    {
+      title: 'See Through Mask 2 16x20',
+      imageUrl: '/portfolio0images/See through(Mask)2 16x20.jpeg',
+    },
+    {
+      title: 'See Through Mask 3 16x20',
+      imageUrl: '/portfolio0images/See through(Mask)3 16x20.jpeg',
+    },
+    {
+      title: 'See Through Mask 4 16x20',
+      imageUrl: '/portfolio0images/See through(Mask)4 16x20.jpeg',
+    },
+    {
+      title: 'The Ancestors Always 18x24',
+      imageUrl: 'portfolio0images/The Ancestors Always 18x24.jpeg',
+    },
+    {
+      title: 'The Ancestors Before 22x28',
+      imageUrl: '/portfolio0images/The ancestors before 22x28tif.jpeg',
+    },
+    {
+      title: 'The Ancestors (Many From Afar) 22x28',
+      imageUrl: '/portfolio0images/The Ancestors(many from afar)22x28.jpeg',
+    },
+    {
+      title: 'Unmask 1 18x24',
+      imageUrl: '/portfolio0images/Unmask1 18x24.jpeg',
+    },
+    {
+      title: 'Unmask 2 18x24',
+      imageUrl: '/portfolio0images/Unmask2 18x24.jpeg',
+    },
+    {
+      title: 'Which Witches Eye 16x20',
+      imageUrl: '/portfolio0images/Which witches eye_ 16x20.jpeg',
+    },
+  
   ];
 
   const handleImageClick = (imageUrl) => {
@@ -104,11 +145,11 @@ const Portfolio1 = () => {
 
   // Handlers for previous and next portfolio navigation
   const handlePreviousPortfolio = () => {
-    navigate('/portfolio0'); // Navigate to Portfolio (or previous portfolio)
+    navigate('/portfolio'); // Navigate to Portfolio (or previous portfolio)
   };
 
   const handleNextPortfolio = () => {
-    navigate('/portfolio2'); // Navigate to Portfolio2 (or next portfolio)
+    navigate('/portfolio1'); // Navigate to Portfolio2 (or next portfolio)
   };
 
   return (
@@ -123,12 +164,10 @@ const Portfolio1 = () => {
         </button>
       </div>
 
-      <h2>Maryland 2024</h2>
+      <h2>Maryland Showing 2023</h2>
       <br />
       <p>
-        This continued body of work is under the overarching theme of “Hidden Knowledge” that most of my work is.
-        The title for this showing is “see through.” Wading through the labyrinth of mind-blocking thoughts that hold back one’s true identity, the expressions
-        on the canvas show an aspect of the journey to reconnect with my heritage and at the same time move forward.
+        This body of work is under the overarching theme of “Hidden Knowledge” that most of my work is. The title for this showing is “see through.” Wading through the labyrinth of mind-blocking thoughts that hold back one’s true identity, the expressions on the canvas show an aspect of the journey to reconnect with my heritage and at the same time move forward.
 
         For purchase inquiries, please reach out via contact page.
       </p>
@@ -181,4 +220,4 @@ const SamplePrevArrow = (props) => {
   );
 };
 
-export default Portfolio1;
+export default Portfolio0;

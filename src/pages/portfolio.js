@@ -83,7 +83,7 @@ const Portfolio = () => {
   };
 
   const handleNextPortfolio = () => {
-    navigate('/portfolio1'); // Navigate to Portfolio1 (or next portfolio)
+    navigate('/portfolio0'); // Navigate to Portfolio1 (or next portfolio)
   };
 
   return (

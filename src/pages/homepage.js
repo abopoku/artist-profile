@@ -29,8 +29,11 @@ const HomePage = () => {
           <Link to="/portfolio"><img src="/appliedart.png" alt="Portfolio" />
           <div className="overlay"><h3>Applied Designs</h3></div>
           </Link>
-          <Link to="/portfolio1"><img src="/Marylandshowing.png" alt="Portfolio 1" />
+          <Link to="/portfolio0"><img src="/Marylandshowing.png" alt="Portfolio 0" />
           <div className="overlay"><h3>Maryland Showing</h3></div>
+          </Link>
+          <Link to="/portfolio1"><img src="/portfolio1images/face off.png" alt="Portfolio 1" />
+          <div className="overlay"><h3>Maryland 2024</h3></div>
           </Link>
           <Link to="/portfolio2"><img src="/Nubuke.png" alt="Portfolio 2" />
           <div className="overlay"><h3>Nubuke Exhibition</h3></div>

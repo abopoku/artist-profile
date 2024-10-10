@@ -100,12 +100,16 @@ body {
 }
 
 .portfolio-grid a:nth-child(4) {
-  grid-column: span 4; /* Fourth image spans 3 columns */
+  grid-column: span 2; /* Fourth image spans 3 columns */
   grid-row: span 1;    /* Wider but not tall */
 }
 
 .portfolio-grid a:nth-child(5) {
   grid-column: span 4; /* Fourth image spans 3 columns */
+  grid-row: span 1;    /* Wider but not tall */
+}
+.portfolio-grid a:nth-child(6) {
+  grid-column: span 3; /* Fourth image spans 3 columns */
   grid-row: span 1;    /* Wider but not tall */
 }
 
