@@ -21,21 +21,6 @@ body {
   text-align: center;
 }
 
-/* .header-content {
-  color: #fff;
-  padding: 20px;
-}
-
-.header-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.header-content p {
-  font-size: 1.2rem;
-  max-width: 800px;
-} */
-
 /* Welcome Section */
 .welcome-section {
   background-color: #000;
@@ -61,18 +46,20 @@ body {
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));  /* Responsive grid */
   gap: 10px;
 }
 
 .portfolio-grid a {
   position: relative;
   overflow: hidden;
+  width: 100%;
+  aspect-ratio: 1/1; /* enforces square images */
 }
 
 .portfolio-grid img {
   width: 100%;
-  height: auto;
+  height: 100%;
   cursor: pointer;
   transition: transform 0.3s ease;
   object-fit: cover;
@@ -82,36 +69,6 @@ body {
   transform: scale(1.05);
 }
 
-
-/* Collage Style for Images */
-.portfolio-grid a:nth-child(1) {
-  grid-column: span 4; /* First image spans 3 columns */
-  grid-row: span 1;    /* Spans 1 row normal size  */
-}
-
-.portfolio-grid a:nth-child(2) {
-  grid-column: span 3; /* Second image spans 2 columns */
-  grid-row: span 1;    /* Spans 1 row normal size */
-}
-
-.portfolio-grid a:nth-child(3) {
-  grid-column: span 3; /* Third image spans 3 columns */
-  grid-row: span 1;    /* Same size as first image */
-}
-
-.portfolio-grid a:nth-child(4) {
-  grid-column: span 2; /* Fourth image spans 3 columns */
-  grid-row: span 1;    /* Wider but not tall */
-}
-
-.portfolio-grid a:nth-child(5) {
-  grid-column: span 4; /* Fourth image spans 3 columns */
-  grid-row: span 1;    /* Wider but not tall */
-}
-.portfolio-grid a:nth-child(6) {
-  grid-column: span 3; /* Fourth image spans 3 columns */
-  grid-row: span 1;    /* Wider but not tall */
-}
 
 /* Overlay Title Effect */
 .portfolio-grid a .overlay {

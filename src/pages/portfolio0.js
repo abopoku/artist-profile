@@ -168,7 +168,8 @@ const Portfolio0 = () => {
       <br />
       <p>
         This body of work is under the overarching theme of “Hidden Knowledge” that most of my work is. The title for this showing is “see through.” Wading through the labyrinth of mind-blocking thoughts that hold back one’s true identity, the expressions on the canvas show an aspect of the journey to reconnect with my heritage and at the same time move forward.
-
+        <br />
+        <br />
         For purchase inquiries, please reach out via contact page.
       </p>
       <br/>

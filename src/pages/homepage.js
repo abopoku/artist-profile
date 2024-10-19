@@ -38,11 +38,11 @@ const HomePage = () => {
           <Link to="/portfolio2"><img src="/Nubuke.png" alt="Portfolio 2" />
           <div className="overlay"><h3>Nubuke Exhibition</h3></div>
           </Link>
-          <Link to="/portfolio3"><img src="/digitalexpres.png" alt="Portfolio 3" />
+          <Link to="/portfolio3"><img src="/portfolio3images/10_Not U.png" alt="Portfolio 3" />
           <div className="overlay"><h3>Not Exhibited Yet</h3></div>
           </Link>
-          <Link to="/portfolio4"><img src="/currently working on.png" alt="Portfolio 4" />
-          <div className="overlay"><h3>Unseen Work</h3></div>
+          <Link to="/portfolio4"><img src="/portfolio4images/07_unseen4.png" alt="Portfolio 4" />
+          <div className="overlay"><h3>Unseen</h3></div>
           </Link>
         </div>
       </section>

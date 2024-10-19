@@ -104,11 +104,11 @@ const Portfolio1 = () => {
 
   // Handlers for previous and next portfolio navigation
   const handlePreviousPortfolio = () => {
-    navigate('/portfolio0'); // Navigate to Portfolio (or previous portfolio)
+    navigate('/portfolio0'); // Navigate to previous portfolio
   };
 
   const handleNextPortfolio = () => {
-    navigate('/portfolio2'); // Navigate to Portfolio2 (or next portfolio)
+    navigate('/portfolio2'); // Navigate to next portfolio
   };
 
   return (
@@ -126,10 +126,9 @@ const Portfolio1 = () => {
       <h2>Maryland 2024</h2>
       <br />
       <p>
-        This continued body of work is under the overarching theme of “Hidden Knowledge” that most of my work is.
-        The title for this showing is “see through.” Wading through the labyrinth of mind-blocking thoughts that hold back one’s true identity, the expressions
-        on the canvas show an aspect of the journey to reconnect with my heritage and at the same time move forward.
-
+        This continued body of work is under the overarching theme of “Hidden Knowledge” that most of my work is. The title for this showing is “see through.” Wading through the labyrinth of mind-blocking thoughts that hold back one’s true identity, the expressions on the canvas show an aspect of the journey to reconnect with my heritage and at the same time move forward.
+        <br />
+        <br />
         For purchase inquiries, please reach out via contact page.
       </p>
       <br/>

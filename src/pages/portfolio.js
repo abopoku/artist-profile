@@ -79,11 +79,11 @@ const Portfolio = () => {
 
   // Handlers for previous and next portfolio navigation
   const handlePreviousPortfolio = () => {
-    navigate('/homepage'); // Navigate to Portfolio (or previous portfolio)
+    navigate('/homepage'); // Navigate to homepage
   };
 
   const handleNextPortfolio = () => {
-    navigate('/portfolio0'); // Navigate to Portfolio1 (or next portfolio)
+    navigate('/portfolio0'); // Navigate next portfolio
   };
 
   return (
@@ -101,7 +101,10 @@ const Portfolio = () => {
       <h2>Applied Designs</h2>
       <br />
       <p>
-        This is a collection of applied designs that been created with my newly created from our published book of Adi Nhyia symbols. Click on an image to view and purchase at the retail store.  
+      This collection features applied designs inspired by the newly created Adi Nhyia symbols from our recently published book.
+        <br />
+        <br />
+        Click on an image to view and purchase at the retail store.  
       </p>
       <br/>
 
